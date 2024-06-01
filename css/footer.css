@@ -30,3 +30,17 @@ footer {
   font-weight: bold;
   transform: scale(0.8);
 }
+
+@keyframes icons-float {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.footer-icons img:hover {
+  width: 30px;
+  animation: 1s icons-float infinite;
+}
