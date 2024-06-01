@@ -3,7 +3,7 @@
 @import "main.css";
 
 .media-info-msg {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
@@ -11,11 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  background-color: salmon;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .media-info-msg {
-    opacity: 0;
+    display: none;
   }
 }
